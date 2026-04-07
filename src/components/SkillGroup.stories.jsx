@@ -8,14 +8,14 @@ export default {
 
 export const Languages = {
   args: {
-    title: "Languages & Frameworks",
-    skills: ["JavaScript", "React", "Node.js", "Python", "Java"]
+    title: 'Languages & Frameworks',
+    skills: ['JavaScript', 'React', 'Node.js', 'Python', 'Java'],
   },
 };
 
 export const Tools = {
   args: {
-    title: "Tools & DevOps",
-    skills: ["Docker", "Git", "VS Code", "Vite", "Nginx"]
+    title: 'Tools & DevOps',
+    skills: ['Docker', 'Git', 'VS Code', 'Vite', 'Nginx'],
   },
 };

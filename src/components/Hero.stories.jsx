@@ -9,6 +9,6 @@ export default {
 
 export const Default = {
   args: {
-    ...portfolioData.basicInfo
+    ...portfolioData.basicInfo,
   },
 };

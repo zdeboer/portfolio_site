@@ -9,13 +9,13 @@ export default {
 
 export const SingleProject = {
   args: {
-    ...portfolioData.projects[0]
+    ...portfolioData.projects[0],
   },
 };
 
 export const ManyTechnologies = {
   args: {
     ...portfolioData.projects[0],
-    techList: ['React', 'Vite', 'Docker', 'Playwright', 'Node', 'Sass', 'Framer Motion']
+    techList: ['React', 'Vite', 'Docker', 'Playwright', 'Node', 'Sass', 'Framer Motion'],
   },
 };

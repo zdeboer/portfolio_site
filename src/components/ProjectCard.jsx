@@ -6,9 +6,15 @@ export const ProjectCard = ({ title, description, image, link, techList }) => (
       <h3>{title}</h3>
       <p>{description}</p>
       <div className="tech-stack">
-        {techList.map(tech => <span key={tech} className="badge">{tech}</span>)}
+        {techList.map((tech) => (
+          <span key={tech} className="badge">
+            {tech}
+          </span>
+        ))}
       </div>
-      <a href={link} className="project-link">View Project</a>
+      <a href={link} className="project-link">
+        View Project
+      </a>
     </div>
   </div>
 );

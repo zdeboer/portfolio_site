@@ -1,0 +1,13 @@
+dist
+storybook-static
+node_modules
+**/node_modules
+
+# 8-Track project: user content / generated content
+src/projects/8-Track/**
+src/projects/8-Track/uploads
+src/projects/8-Track/uploads/**
+
+# If composer vendor dir exists in future
+src/projects/8-Track/vendor
+**/vendor
