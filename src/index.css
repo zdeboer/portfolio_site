@@ -27,6 +27,96 @@ body {
   padding: 2rem;
 }
 
+.hero-container {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 900px;
+}
+
+.hero-badge {
+  background: #dcfce7;
+  color: #166534;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0 0.5rem 0;
+  color: #111827;
+}
+
+/* Gradient effect for the title */
+.hero-title-gradient {
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.hero-bio {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+.hero-avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 30px; /* Squircle shape looks more modern than a circle */
+  object-fit: cover;
+  box-shadow:
+    20px 20px 60px #d1d1d1,
+    -20px -20px 60px #ffffff;
+}
+
+/* Button Styling */
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background: #111827;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn-secondary {
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
 /* Hero Styling */
 .hero-section {
   padding: 4rem 0;
@@ -113,4 +203,24 @@ code {
   height: 1px;
   background: var(--border);
   margin: 4rem 0;
+}
+
+/* Add to index.css */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px); /* Modern "Glassmorphism" effect */
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em; /* Tighter headings look more premium */
 }

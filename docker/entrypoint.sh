@@ -5,6 +5,9 @@ set -euo pipefail
 MYSQL_ROOT_PASSWORD="${MYSQL_ROOT_PASSWORD:-}"   # if empty: root can login without password locally
 DB_NAME="${DB_NAME:-music}"
 
+# Web root inside the container (assignment uses /deboer_zack_final_site)
+DOCROOT="${DOCROOT:-/var/www/html}"
+
 # Optional app DB user (not required for the seed, but useful)
 DB_USER="${DB_USER:-app}"
 DB_PASS="${DB_PASS:-app}"
@@ -17,6 +20,14 @@ ADMIN_PASSWORD="${ADMIN_PASSWORD:-admin}"
 # ---- MariaDB runtime dirs ----
 mkdir -p /run/mysqld
 chown -R mysql:mysql /run/mysqld
+
+# ---- Web app writable dirs (uploads) ----
+# Apache in this image runs as www-data. Ensure uploads dirs are writable on every start.
+if [ -d "${DOCROOT}/8-track" ]; then
+  mkdir -p "${DOCROOT}/8-track/uploads/playlist_images"
+  chown -R www-data:www-data "${DOCROOT}/8-track/uploads"
+  chmod -R u+rwX,g+rwX "${DOCROOT}/8-track/uploads"
+fi
 
 # Initialize MariaDB data dir on first run
 if [ ! -d /var/lib/mysql/mysql ]; then
@@ -79,12 +90,12 @@ SQL
   fi
 
   # Seed admin (if script exists in the 8-track folder)
-  if [ -f /var/www/html/8-track/seed_admin.php ]; then
+  if [ -f "${DOCROOT}/8-track/seed_admin.php" ]; then
     ADMIN_USERNAME="$ADMIN_USERNAME" \
     ADMIN_EMAIL="$ADMIN_EMAIL" \
     ADMIN_PASSWORD="$ADMIN_PASSWORD" \
     DB_NAME="$DB_NAME" \
-    php /var/www/html/8-track/seed_admin.php || true
+    php "${DOCROOT}/8-track/seed_admin.php" || true
   fi
 
   touch /var/lib/mysql/.bootstrapped

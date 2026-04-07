@@ -1,4 +1,7 @@
 // src/data/portfolioData.js
+const dockerBaseUrl = 'http://127.0.0.1:5575';
+const assetBaseUrl = import.meta.env.DEV ? dockerBaseUrl : '';
+
 export const portfolioData = {
   basicInfo: {
     name: 'Zack de Boer',
@@ -9,16 +12,16 @@ export const portfolioData = {
     {
       title: 'Static Site for Ladybug Cleaning Services',
       description: 'My final project for term 1 - Web Development 1.',
-      image: '/ladybug/images/ladybugsite_image.png',
-      link: '/ladybug/',
+      image: `${assetBaseUrl}/ladybug/images/ladybugsite_image.png`,
+      link: `${assetBaseUrl}/ladybug/`,
       techList: ['HTML', 'CSS'],
     },
     {
       title: '8-Track Playlist Organizer',
       description:
         'A PHP application for organizing playlists, which makes use of a CMS using a LAMP stack, and the Spotify Web API',
-      image: '',
-      link: '/8-track/',
+      image: `${assetBaseUrl}/8-track/images/8_track_logo.jpg`,
+      link: `${assetBaseUrl}/8-track/`,
       techList: ['PHP', 'CSS', 'LAMP Stack', 'CMS', 'API', 'Spotify'],
     },
   ],

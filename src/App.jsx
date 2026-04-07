@@ -28,6 +28,7 @@ function App() {
           name={basicInfo.name || 'Name Not Set'}
           title={basicInfo.title || 'Developer'}
           bio={basicInfo.bio || 'Bio coming soon...'}
+          avatarUrl={basicInfo.avatarUrl}
         />
       </section>
 
@@ -35,7 +36,7 @@ function App() {
 
       {/* 2. Work Section */}
       <section id="work">
-        <h2 className="section-title">Selected Work</h2>
+        <h2 className="section-title">My Previous Work</h2>
         <div className="projects-grid">
           {projects.length > 0 ? (
             projects.map((project, index) => <ProjectCard key={`project-${index}`} {...project} />)
