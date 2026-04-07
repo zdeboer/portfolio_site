@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Contact Us – Ladybug Cleaning Services</title>
+  <script src="contact.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header-badge">
+            <div class="header-title">
+                <div class="title">
+                    Ladybug
+                </div>
+                <div class="subtitle">
+                    Cleaning Services
+                </div>
+            </div>
+            <img src="images/LadybugClosePhoto1.png" alt="Ladybug">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="contact-section">
+            <h1>We’d Love to Hear From You!</h1>
+            <p>Whether you have questions, feedback, or just want to say hello, reach out to us below.</p>
+
+        <form id="contact-form" action="thankyou.html" method="get">
+            <fieldset>
+                <ol>
+                    <li>
+                        <label for="contact-name">Name</label>
+                        <input id="contact-name" name="name" type="text">
+                    </li>
+                    <li>
+                        <label for="contact-email">Email</label>
+                        <input id="contact-email" name="email" type="text">
+                    </li>
+                    <li>
+                        <label for="contact-phone">Phone</label>
+                        <input id="contact-phone" name="phone" type="tel">
+                    </li>
+                    <li>
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5"></textarea>
+                    </li>
+                </ol>
+            </fieldset>
+            <button type="submit">Send Message</button>
+            <button type="reset">Reset</button>
+        </form>
+            <div class="contact-details">
+                <h2>Business Info</h2>
+                <p><strong>Phone:</strong> (204) 218-5515</p>
+                <p><strong>Email:</strong> cleanwhatbugsyou@gmail.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2025 Ladybug Cleaning Services</p>
+                <p>Clean What Bugs You!</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a> |
+                <a href="services.html">Services</a> |
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,418 @@
+body {
+    margin: 0px;
+    font-family: "Fredoka";
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3.2em;
+}
+
+#header {
+    display: flex;
+    top: 0px;
+    justify-content: space-between;
+    padding-left: 10px;
+    box-shadow: 0px 6px 15px rgb(106, 106, 106);
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    overflow: visible;
+    min-width: 800px;
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+}
+
+#header div.header-badge {
+    font-size: 2.9em;
+    display: flex;
+}
+
+#header div.subtitle {
+    font-size: 0.5em;
+    color: #F51822;
+    padding-bottom: 5px;
+}
+
+#header img {
+    height: 1.92em;
+    margin-left: 10px;
+}
+
+#header nav {
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#header nav ul li {
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: color 0.15s;
+}
+
+#header nav ul a:hover {
+    cursor: pointer;
+    color: #F51822;
+}
+
+#home {
+    padding-top: 85px;
+    align-items: center;
+    z-index: 1;
+}
+
+
+#home div.home-image {
+    width: 100%;
+    height: 700px;
+    background-image: url(images/living-room_upscayl_3840px_upscayl-standard-4x.png);
+    background-size: cover;
+
+    background-position: left bottom;
+    background-position-x: 50%;
+}
+
+#home h1.opener-message {
+    position: absolute;
+    top: 3em;
+    font-family: "Fredoka";
+    text-align: center;
+    width: 100%;
+}
+
+#home div.home-image button {
+    position: absolute;
+    top: 40%;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-family: "Fredoka";
+    border: none;
+    border-radius: 10px;
+    padding: 7px 15px;
+    transition: background-color 0.15s, font-size 0.2s;
+}
+
+#home div.home-image button:hover {
+    cursor: pointer;
+    font-size: 2.1em;
+    background-color: #ff2f39;
+}
+
+#home div.empty {
+    background-color: rgb(227, 227, 227);
+    width: 100vw;
+    height: 210px;
+    position: relative;
+}
+
+#home div.booking-box {
+    position: relative;
+    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f44336;
+    padding: 15px 35px 35px 35px;
+    text-align: center;
+    width: 500px;
+    height: 155px;
+    box-shadow: 0px 3px 15px black;
+    z-index: 10;
+
+
+}
+
+#home form {
+    width: 100%;
+}
+
+#home fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;;
+}
+
+#home legend {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+#home form ol {
+    list-style-type: none;
+    width: 100%;
+}
+
+#home form ol label {
+    float: left;
+    width: 30%;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#home form ol li { 
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+#home form ol li input {
+    height: 100%;
+    width: 60%;
+    font-size: 1.3em;
+}
+
+#home form button {
+    font-size: 1.2em;
+    font-family: "Fredoka";
+    border: none;
+    border-radius: 10px;
+    padding: 7px 15px;
+    transition: background-color 0.15s, font-size 0.2s;
+}
+
+#home form button:hover {
+    cursor: pointer;
+    background-color: #bbbbbb;
+}
+
+.contact-section {
+  max-width: 800px;
+  margin: 100px auto 40px auto;
+  padding: 20px;
+  font-family: "Fredoka", sans-serif;
+}
+
+.contact-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  margin-top: 40px;
+  font-size: 1.1em;
+}
+
+#contact-form fieldset {
+    border: none;
+}
+
+#contact-form ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact-form ol li {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  font-size: 1em;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact-form button {
+  font-size: 1.2em;
+  font-family: "Fredoka";
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+#contact-form button:hover {
+  background-color: #d32f2f;
+  cursor: pointer;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: red;
+  font-size: 0.9em;
+}
+
+.services-section {
+  max-width: 900px;
+  margin: 100px auto 40px auto;
+  padding: 20px;
+  font-family: "Fredoka", sans-serif;
+}
+
+.services-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.services-section p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service-item h2 {
+  font-size: 1.6em;
+  color: #f44336;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service-item p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.thankyou-section {
+  max-width: 700px;
+  margin: 300px auto 300px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+}
+
+.thankyou-section h1 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.thankyou-section p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f44336;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d32f2f;
+}
+
+footer {
+  background-color: #f44336;
+  margin-top: 40px;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: unset; /* Remove fixed width for flexibility */
+    position: static; /* Optional: remove fixed positioning on mobile */
+    box-shadow: 0px 6px 15px rgb(106, 106, 106);
+  }
+
+  #header div.header-badge {
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em; /* Slightly smaller for mobile */
+  }
+
+  #header div.subtitle {
+    font-size: 0.6em;
+    padding-bottom: 5px;
+  }
+
+  #header img {
+    height: auto;
+    width: 100px; /* Adjust image size for mobile */
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #header nav {
+    font-size: 1.2em;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #header nav ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  #header nav ul li {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+
+  #header nav ul a {
+    display: block;
+    width: 100%;
+  }
+
+  #home h1.opener-message {
+    transform: translate(0, 300px);
+}
+}
+
