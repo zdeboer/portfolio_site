@@ -78,7 +78,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <p>© 2026 {basicInfo.name || 'Developer'} | Assignment 14 Portfolio</p>
+        <p>{basicInfo.name || 'Developer'} | Portfolio</p>
       </footer>
     </div>
   );
