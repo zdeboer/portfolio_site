@@ -18,15 +18,15 @@ Then open:
 
 ## How to run (manual)
 
-# Build the image
+### Build the image
 
 docker build -t deboer_zack_final_site:latest .
 
-# Remove any existing container with the required name
+### Remove any existing container with the required name
 
 docker rm -f deboer_zack_coding_assignment14 2>$null
 
-# Run the required container on port 5575
+### Run the required container on port 5575
 
 docker run -d --name deboer_zack_coding_assignment14 -p 5575:80 deboer_zack_final_site:latest
 
